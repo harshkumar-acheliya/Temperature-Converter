@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tempCon.css">
+    <title>Temperature Convertor 🌡️</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="headerCont">
+            <h1 class="heading1">Temperature Convertor 🌡️</h1>
+            <h7 class="subheading">CONVERTED TEMPERATURE <span id="tempUnit" class="tempUnit">(Temp Unit)</span></h7>
+            <h1 id="convertedTemp" class="convertedTemp"> 0.0 </h1>
+        </div>
+        <div class="inputCont">
+            <label id="label1" for="amount">Amount</label>
+            <input type="text" name="tempInput" id="tempInput" placeholder="Enter Temperature">
+        </div>
+        <div class="conversionCont">
+            <div class="conversion1Cont">
+                <label class='label2' for="from">FROM</label><br>
+                
+                <select id="tempCon1" aria-label="Default select example">
+                    <option selected>Select Temp Unit</option>
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                </select>
+            </div>
+            <div class="conversion1Cont">
+                <label class='label2' for="from">TO</label><br>
+                <select id="tempCon2" aria-label="Default select example">
+                    <option selected>Select Temp Unit</option>
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="buttonCont">
+            
+                <button id="btnConvert" type="button" class="btn btn-primary">Convert Temperature</button>
+            
+        </div>
+
+
+    </div>
+    <script src="tempCon.js"></script>
+</body>
+
+</html>
